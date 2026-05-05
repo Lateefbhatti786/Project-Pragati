@@ -59,4 +59,4 @@ Project Pragati is developed to bridge the gap between rural communities and dig
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/project-pragati.git
+   git clone https://github.com/Lateefbhatti786/project-pragati.git
