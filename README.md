@@ -42,7 +42,12 @@ Project Pragati is developed to bridge the gap between rural communities and dig
 
 ## 📸 Screenshots
 
-<img width="1305" height="645" alt="image" src="https://github.com/user-attachments/assets/cae4f8a7-05e3-497a-b019-64a53de58d5e" /><img width="1155" height="627" alt="image" src="https://github.com/user-attachments/assets/91c2151f-d296-4f9f-ac68-2fd733c7d4ed" />
+### 🏠 Homepage
+<img width="1305" height="645" alt="image" src="https://github.com/user-attachments/assets/cae4f8a7-05e3-497a-b019-64a53de58d5e" />
+
+<img width="1155" height="627" alt="image" src="https://github.com/user-attachments/assets/91c2151f-d296-4f9f-ac68-2fd733c7d4ed" />
+
+### 🔐 Login Page
 <img width="1098" height="648" alt="image" src="https://github.com/user-attachments/assets/ad346ada-ee8c-4d6a-9af8-95dfab77104a" />
 
 
