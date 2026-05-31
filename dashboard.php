@@ -156,7 +156,7 @@ if (!isset($_SESSION['user']) || $_SESSION['role'] !== 'sakhi') {
         👤 <?php echo $_SESSION['user']; ?>
     </span>
 
-    <a href="backend/logout.php" class="cta-button" 
+    <a href="backend/auth/logout.php" class="cta-button" 
    onclick="return confirm('Are you sure you want to logout?')">
    Logout
 </a>

@@ -232,7 +232,7 @@ if (!isset($_SESSION['user']) || $_SESSION['role'] !== 'admin') {
             }
         }
         // Load Village Data
-        fetch("backend/get_requests.php")
+        fetch("backend/villages/get_requests.php")
             .then(res => res.json())
             .then(data => {
                 let table = document.querySelector("#villageTable tbody");
@@ -255,7 +255,7 @@ if (!isset($_SESSION['user']) || $_SESSION['role'] !== 'admin') {
             });
 
         // Load Volunteer Data
-        fetch("backend/get_volunteers.php")
+        fetch("backend/volunteers/get_volunteers.php")
             .then(res => res.json())
             .then(data => {
                 let table = document.querySelector("#volunteerTable tbody");
@@ -276,7 +276,7 @@ if (!isset($_SESSION['user']) || $_SESSION['role'] !== 'admin') {
                 });
             });
         // Load Partner Data
-        fetch("backend/get_partners.php")
+        fetch("backend/partners/get_partners.php")
             .then(res => res.json())
             .then(data => {
                 let table = document.querySelector("#partnerTable tbody");
@@ -311,7 +311,7 @@ if (!isset($_SESSION['user']) || $_SESSION['role'] !== 'admin') {
         function deleteVillage(id) {
             if (!confirm("Delete this entry?")) return;
 
-            fetch("backend/delete_village.php", {
+            fetch("backend/villages/delete_village.php", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded"
@@ -329,7 +329,7 @@ if (!isset($_SESSION['user']) || $_SESSION['role'] !== 'admin') {
         function deleteVolunteer(id) {
             if (!confirm("Delete this entry?")) return;
 
-            fetch("backend/delete_volunteer.php", {
+            fetch("backend/volunteers/delete_volunteer.php", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded"
@@ -342,7 +342,7 @@ if (!isset($_SESSION['user']) || $_SESSION['role'] !== 'admin') {
 
         // Update Partner Status
         function updateStatus(id, status) {
-            fetch("backend/update_partner_status.php", {
+            fetch("backend/partners/update_partner_status.php", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded"
@@ -362,7 +362,7 @@ if (!isset($_SESSION['user']) || $_SESSION['role'] !== 'admin') {
         function deletePartner(id) {
     if (!confirm("Delete this partner request?")) return;
 
-    fetch("backend/delete_partner.php", {
+    fetch("backend/partners/delete_partner.php", {
         method: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded"

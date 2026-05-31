@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         let formData = new FormData(form);
 
-        fetch("backend/submit_village.php", {
+        fetch("backend/villages/submit_village.php", {
             method: "POST",
             body: formData
         })
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         let formData = new FormData(form);
 
-        fetch("backend/submit_volunteer.php", {
+        fetch("backend/volunteers/submit_volunteer.php", {
             method: "POST",
             body: formData
         })
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Load stats from backend
-fetch("backend/get_stats.php")
+fetch("backend/admin/get_stats.php")
 .then(res => res.json())
 .then(data => {
     document.getElementById("villageCount").innerText = data.village;
@@ -82,7 +82,7 @@ fetch("backend/get_stats.php")
 function deleteVillage(id) {
     if (!confirm("Delete this entry?")) return;
 
-    fetch("backend/delete_village.php", {
+    fetch("backend/villages/delete_village.php", {
         method: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded"
@@ -96,7 +96,7 @@ function deleteVillage(id) {
 function deleteVolunteer(id) {
     if (!confirm("Delete this entry?")) return;
 
-    fetch("backend/delete_volunteer.php", {
+    fetch("backend/volunteers/delete_volunteer.php", {
         method: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded"
@@ -112,7 +112,7 @@ document.getElementById("partnerForm")?.addEventListener("submit", function(e) {
 
     let formData = new FormData(this);
 
-    fetch("backend/submit_partner.php", {
+    fetch("backend/partners/submit_partner.php", {
         method: "POST",
         body: formData
     })

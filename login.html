@@ -92,7 +92,7 @@
 
             let formData = new FormData(this);
 
-            fetch("backend/login.php", {
+            fetch("backend/auth/login.php", {
                 method: "POST",
                 body: formData
             })
@@ -117,7 +117,7 @@
 
             let formData = new FormData(this);
 
-            fetch("backend/signup.php", {
+            fetch("backend/auth/signup.php", {
                 method: "POST",
                 body: formData
             })
